@@ -4,9 +4,12 @@
     "description": "",
     "repository" : {
         "type" : "git",
-        "url" : "http://github.com/npm/npm.git"
+        "url" : "http://github.com/thecitylights/thecitylights.git"
     },
     "main": "server/index.js",
+    "dependencies": {
+        "connect": "^2.14.5"
+    },
     "scripts": {
         "test": "echo \"No test specified\" && exit 0"
     },
@@ -14,8 +17,5 @@
         "Alexandre Gigliotti",
         "Victor Cao"
     ],
-    "license": "MIT",
-    "dependencies": {
-        "connect": "^2.14.5"
-    }
+    "license": "MIT"
 }
