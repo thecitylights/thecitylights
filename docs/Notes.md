@@ -6,36 +6,42 @@ Push
 
 
 # Heroku
+(https://devcenter.heroku.com/articles/getting-started-with-nodejs)
 
+## Install
 Install `heroku` and `foreman` CLI commands
 
+## Login to Heroku
+    heroku login
 
-Declare process types in `Procfile`
+## Configure processes
+Create a file named `Procfile` in the root directory
+Declare process types in that file
 Note: only `web` process receives HTTP traffic
 
     web: node server/index.js
 
-Create app
+## Create app
 
     heroku create [name]
 
-Deploy code
+## Deploy code
 
     git push heroku master
 
-Launch `web` process with 1 dyno
+## Launch `web` process with 1 dyno
 
     heroku ps:scale web=1
 
-View logs
+## View logs
 
     heroku logs
 
-Visit app
+## Visit app
 
     heroku open
 
-Kill `web` process
+## Kill `web` process
 
     heroku ps:scale web=0
 
@@ -59,10 +65,10 @@ Run automated setup tool
 
     travis setup heroku
 
-Trigger build
+## Trigger build
 Push repo to github
 
-Add build image to README.md
-Click on image.
-Copy Markdown link to README.md
+## Add build status image to README.md
+Click on image in Travis CI.
+Copy Markdown link for desired branch to README.md
 Push

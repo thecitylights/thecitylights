@@ -1,17 +1,21 @@
 {
-  "name": "thecitylights",
-  "version": "0.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"No test specified\" && exit 0"
-  },
-  "authors": [
-    "Alexandre Gigliotti",
-    "Victor Cao"
-  ],
-  "license": "MIT",
-  "dependencies": {
-    "connect": "^2.14.5"
-  }
+    "name": "thecitylights",
+    "version": "0.0.0",
+    "description": "",
+    "repository" : {
+        "type" : "git",
+        "url" : "http://github.com/npm/npm.git"
+    },
+    "main": "server/index.js",
+    "scripts": {
+        "test": "echo \"No test specified\" && exit 0"
+    },
+    "authors": [
+        "Alexandre Gigliotti",
+        "Victor Cao"
+    ],
+    "license": "MIT",
+    "dependencies": {
+        "connect": "^2.14.5"
+    }
 }

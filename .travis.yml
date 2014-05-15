@@ -2,7 +2,8 @@ language: node_js
 deploy:
   provider: heroku
   api_key:
-    secure: h5qQfZulgojvbgGFxcyJGFxtB7i3WK1bZwoCK3sx9YydtqlFRvjUr4QkrXe5Z6g5MR3A7CN1O7HjaJbqARMDgTdRTnWY4ZDdCEsBNhbRiaLSXeQmqlFWLWROk8QPtx4U9TfotdHL8JoV8bRhnN5L0GMd4lpApbL59rIgN6Hd5qg=
+    master:
+        secure: h5qQfZulgojvbgGFxcyJGFxtB7i3WK1bZwoCK3sx9YydtqlFRvjUr4QkrXe5Z6g5MR3A7CN1O7HjaJbqARMDgTdRTnWY4ZDdCEsBNhbRiaLSXeQmqlFWLWROk8QPtx4U9TfotdHL8JoV8bRhnN5L0GMd4lpApbL59rIgN6Hd5qg=
   app:
       master: thecitylights
   on:
