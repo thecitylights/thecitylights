@@ -41,16 +41,23 @@ Kill `web` process
 
 
 # Travis CI
+(http://docs.travis-ci.com/user/getting-started/)
 
 Install `travis` CLI command
 
-    sudo gem install travis -v 1.6.10 --no-rdoc --no-ri
+    sudo gem install travis
 
-Turn on repository
-
+Turn repository 'on' in the Travis web ui
 Create .travis.yml
 
     language: node_js
+
+## Configure Heroku deployment
+(http://docs.travis-ci.com/user/deployment/heroku/)
+
+Run automated setup tool
+
+    travis setup heroku
 
 Trigger build
 Push repo to github
