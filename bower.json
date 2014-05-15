@@ -1,0 +1,22 @@
+{
+  "name": "thecitylights",
+  "version": "0.0.0",
+  "homepage": "https://github.com/thecitylights/thecitylights",
+  "authors": [
+    "Alexandre Gigliotti",
+    "Victor Cao"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "marionette": "~1.8.5",
+    "requirejs": "~2.1.11",
+    "normalize-css": "~3.0.1"
+  }
+}
