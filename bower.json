@@ -17,6 +17,8 @@
   "dependencies": {
     "marionette": "~1.8.5",
     "requirejs": "~2.1.11",
-    "normalize-css": "~3.0.1"
+    "normalize-css": "~3.0.1",
+    "fastclick": "~1.0.1",
+    "velocity": "~0.0.10"
   }
 }
