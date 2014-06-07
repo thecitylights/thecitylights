@@ -31,7 +31,7 @@ gulp.task('js', ['clean'], function (done) {
 		name: 'main',
 		optimize: 'uglify2',
 		uglify2: {
-			mangle: false
+			mangle: true
 		},
 		generateSourceMaps: true,
 		preserveLicenseComments: false,
