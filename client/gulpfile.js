@@ -33,7 +33,7 @@ gulp.task('js', ['clean'], function (done) {
 		uglify2: {
 			mangle: true
 		},
-		generateSourceMaps: true,
+		generateSourceMaps: false,
 		preserveLicenseComments: false,
 		out: 'build/main.js'
 	}, success, done);
@@ -44,7 +44,7 @@ gulp.task('css', ['clean'], function (done) {
 			paths: ['build/'],
 			relativeUrls: true,
 			compress: true,
-			sourceMap: 'true',
+			sourceMap: false,
 			sourceMapBasepath: 'build/',
 			sourceMapURL: 'main.css.map',
 			writeSourceMap: function (data) {
