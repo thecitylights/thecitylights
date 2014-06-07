@@ -26,5 +26,8 @@
     "gulp-inject": "^0.4.1",
     "less": "^1.7.0",
     "requirejs": "^2.1.11"
+  },
+  "engines": {
+      "npm": "1.4.3"
   }
 }
