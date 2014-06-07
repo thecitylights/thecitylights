@@ -4,7 +4,7 @@ var connect = require('connect');
 var port = Number(process.env.PORT || 8000);
 var env = process.env.NODE_ENV;
 console.log('node: environment: ' + env);
-var root = path.join(process.cwd(), (env==='production' ? 'client/build' : 'client'));
+var root = (env==='production' ? 'client/build' : 'client');
 console.log('node: root: ' + root);
 var app = connect()
     .use(connect.logger())
