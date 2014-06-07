@@ -14,8 +14,8 @@ gulp.task('copy', ['clean'], function () {
 	return es.concat(
 		gulp.src('config/**')
 			.pipe(gulp.dest('build/config')),
-		gulp.src('resources/**')
-			.pipe(gulp.dest('build/resources'))
+		gulp.src('bower_components/**')
+			.pipe(gulp.dest('build/bower_components'))
 	);
 });
 gulp.task('js', ['clean'], function (done) {

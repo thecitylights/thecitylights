@@ -26,6 +26,10 @@ Note: only `web` process receives HTTP traffic
 
     heroku create [name]
 
+## Set environment
+
+    heroku config:set NODE_ENV=production
+
 ## Deploy code
 
     git push heroku master
