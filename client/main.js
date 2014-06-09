@@ -1,3 +1,3 @@
-require(['jquery'], function ($) {
-    console.log($('body'));
+require(['app/main'], function (app) {
+    app.init();
 });

@@ -1,0 +1,3 @@
+var less = {
+	relativeUrls: true
+};

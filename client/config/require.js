@@ -1,7 +1,10 @@
 var require = {
     baseUrl: '.',
     paths: {
-        'jquery': './bower_components/jquery/dist/jquery'
+        'text': './bower_components/requirejs-text/text',
+        'jquery': './bower_components/jquery/dist/jquery',
+        'underscore': './bower_components/underscore/underscore',
+        'backbone': './bower_components/backbone/backbone'
     },
-    waitSeconds: 15
+    waitSeconds: 30
 };
