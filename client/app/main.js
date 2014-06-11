@@ -1,5 +1,5 @@
 define(function (require) {
-    var handler = require('./handler');
+    var Handler = require('./handler');
     var Router = require('./router');
     var module = {
         Navigation: require('./module/navigation/main')
@@ -10,9 +10,13 @@ define(function (require) {
     return {
         init: function () {
             showNavigation();
+            var handler = new Handler();
             var router = new Router({
                 '': handler.handle.root,
-                'donate': handler.handle.donate
+                'donate': handler.handle.donate,
+                'beliefs': handler.handle.beliefs,
+                'story': handler.handle.story,
+                'vision': handler.handle.vision
             });
             console.log('app: initialized');
         }

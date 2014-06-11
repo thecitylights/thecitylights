@@ -12,10 +12,13 @@ gulp.task('clean', function () {
 });
 gulp.task('copy', ['clean'], function () {
 	return es.concat(
+		gulp.src('bower_components/**')
+			.pipe(gulp.dest('build/bower_components')),
 		gulp.src('config/**')
 			.pipe(gulp.dest('build/config')),
-		gulp.src('bower_components/**')
-			.pipe(gulp.dest('build/bower_components'))
+		gulp.src('resources/**')
+			.pipe(gulp.dest('build/resources'))
+
 	);
 });
 gulp.task('js', ['clean'], function (done) {
