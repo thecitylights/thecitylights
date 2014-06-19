@@ -1,7 +1,7 @@
 var http = require('http');
 var path = require('path');
 var connect = require('connect');
-var port = Number(process.env.PORT || 8000);
+var port = Number(process.env.PORT || 5000);
 var env = process.env.NODE_ENV;
 console.log('node: environment: ' + env);
 var root = (env==='production' ? 'client/build' : 'client');
