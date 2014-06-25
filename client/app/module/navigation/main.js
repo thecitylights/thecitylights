@@ -3,7 +3,7 @@ define(function (require) {
     var _ = require('underscore');
     var backbone = require('backbone');
     var html = require('text!./main.html');
-    var Handle = function (element, state) {
+    var Handle = function ($el, state) {
         return {
             dom: {
                 onClickButton: function (event) {
@@ -15,7 +15,7 @@ define(function (require) {
             },
             state: {
                 onChangeStaged: function (state, staged) {
-                    $(element).toggleClass('staged', staged);
+                    $el.toggleClass('staged', staged);
                 }
             }
         };
