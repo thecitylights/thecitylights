@@ -3,7 +3,57 @@
     .box-sizing(border-box);
 }
 
+.t-left {
+  text-align: left;
+}
+
+.t-right {
+  text-align: right;
+}
+
+.t-center {
+  text-align: center;
+}
+
 // Modules
 @import "module/navigation/main";
 @import "module/home/main";
 @import "module/donate/main";
+
+
+// Globals
+html, body {
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+
+header {
+  background: #000;
+  
+  .display-flex;
+  .align-items(center);
+  .justify-content(center);
+  height: 700px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+
+  box-sizing: border-box;
+
+  h1 {
+    color: white;
+    font-size: 4rem;
+  }
+}
+
+.content {
+
+}
+
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}

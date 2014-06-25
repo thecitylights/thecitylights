@@ -1,0 +1,97 @@
+.background-size (@value) {
+  -webkit-background-size: @value;
+  background-size: @value;
+}
+.border-radius (@radius) {
+  -webkit-border-radius: @radius;
+  border-radius: @radius;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.box-shadow (@value) {
+  -webkit-box-shadow: @value;
+  box-shadow: @value;
+}
+.box-shadow (@shadow1, @shadow2) {
+  -webkit-box-shadow: @shadow1, @shadow2;
+  box-shadow: @shadow1, @shadow2;
+}
+.display-flex {
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.justify-content (@value) {
+  -webkit-justify-content: @value;
+  -webkit-box-pack: @value;
+  -moz-justify-content: @value;
+  -ms-flex-pack: @value;
+  justify-content: @value;
+}
+.align-items (@value) {
+  -webkit-align-items: @value;
+  -webkit-box-align: @value;
+  -moz-align-items: @value;
+  -ms-flex-align: @value;
+  align-items: @value;
+}
+.transition (@properties) {
+  -webkit-transition: @properties;
+  -moz-transition: @properties;
+  -o-transition: @properties;
+  transition: @properties;
+}
+
+.placeholder(@typeface, @fstyle, @color, @font-size) {
+
+  ::-webkit-input-placeholder {
+    font-family: @typeface;
+    font-style: @fstyle;
+    color: @color;
+    font-size: @font-size rem;
+    vertical-align: middle;
+
+  }
+  ::-moz-placeholder {
+    font-family: @typeface;
+    font-style: @fstyle;
+    color: @color;
+    font-size: @font-size rem;
+    vertical-align: middle;
+
+  }
+  /* firefox 19+ */
+  :-ms-input-placeholder {
+    font-family: @typeface;
+    font-style: @fstyle;
+    color: @color;
+    font-size: @font-size rem;
+    vertical-align: middle;
+
+  }
+  /* ie */
+  input:-moz-placeholder {
+    font-family: @typeface;
+    font-style: @fstyle;
+    color: @color;
+    font-size: @font-size rem;
+    vertical-align: middle;
+
+  }
+}
+.user-select (@value) {
+  -webkit-touch-callout: @value;
+  -webkit-user-select: @value;
+  -khtml-user-select: @value;
+  -moz-user-select: @value;
+  -ms-user-select: @value;
+  user-select: @value;
+}
+
+
+.align(@value) {
+  text-align: @value;
+}
