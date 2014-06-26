@@ -16,55 +16,59 @@
 
 // Globals
 html, body {
-  top: 0;
-  left: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+
+
+header {
+  background-size: cover;
+  background-position: center bottom;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+
+  .display(flex);
+  .align-items(center);
+  .justify-content(center);
+  height: 100%;
+  // min-height: 700px;
+  width: 100%;
   margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+
+  box-sizing: border-box;
+
+  h1 {
+    color: white;
+    font-size: 5rem;
+  }
 }
 
-.page {
+.content {
+
+}
+
+.wrapper {
+  // width: 1000px;
+  margin: 0 auto;
+}
+
+@media all and (min-width: @bpSmall) {
     header {
-      background-size: cover;
-      background-position: center bottom;
-      background-attachment: scroll;
-      background-repeat: no-repeat;
 
-      .display(flex);
-      .align-items(center);
-      .justify-content(center);
-      height: 700px;
-      width: 100%;
-      margin: 0;
-      padding: 0;
-      position: relative;
-      z-index: 1;
-
-      box-sizing: border-box;
-
-      h1 {
-        color: white;
-        font-size: 5rem;
-      }
-    }
-
-    .content {
-
-    }
-
-    .wrapper {
-      width: 1000px;
-      margin: 0 auto;
-    }
-
-    @media all and (min-width: @bpSmall) {
-        header {
-
-        }
     }
 }
-
 
 
 // Modules
-@import "module/navigation/main";
-@import "module/home/main";
+@import "module/beliefs/main";
 @import "module/donate/main";
+@import "module/footer/main";
+@import "module/home/main";
+@import "module/navigation/main";
+@import "module/story/main";
+@import "module/vision/main";

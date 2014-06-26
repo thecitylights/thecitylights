@@ -7,7 +7,7 @@ define(function (require) {
         Vision: require('./module/vision/main')
     };
     var show = function (module) {
-        $('.page').remove();
+        $('body').children().not('nav').remove();
         $('body').append(module.render());
     };
     return function () {
