@@ -23,6 +23,34 @@ html, body {
 }
 
 
+// Typography
+@primary-font: ;
+@secondary-font: ;
+
+
+
+h1 {
+
+}
+
+h2 {
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+p {
+
+}
+
+
+// Header
+
 header {
   background-size: cover;
   background-position: center bottom;
@@ -47,21 +75,72 @@ header {
   }
 }
 
+// Content
+
 .content {
   padding: 1em;
 
 }
 
 .wrapper {
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
-@media all and (min-width: @bpSmall) {
-    header {
 
-    }
+// Forms
+
+
+
+button, input[type="submit"] {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+
+  margin: 1rem 0;
+  padding: .5rem;
 }
+
+
+// Newsletter
+.newsletter {
+  text-align: center;
+  
+  @media @tablet {
+    text-align: left;
+  }
+  input {
+    padding: 1rem 0;
+    width: 90%;
+
+    @media @tablet {
+      padding: .5rem 0;
+      width: 10rem;
+    }
+  }
+
+  input[type="email"] {
+    color: white;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid white;
+  }
+
+  input[type="submit"] {
+
+    @media @tablet {
+      width: 6rem;
+    }
+  }
+
+  .placeholder(inherit, inherit, white, inherit);
+
+  label {
+    display: block;
+    font-weight: bold;
+  }
+}
+
 
 
 // Modules
